@@ -24,14 +24,16 @@ body {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
- color: white;
+  color: white;
+  word-wrap: break-word;
  
 
 }
 
 .photo img {
-  width: 120px;
-  height: 120px;
+  
+  max-width: 100%;
+  height: auto;
   border: 3px solid #155767;
   border-radius: 50%;
   object-fit: cover;
@@ -69,9 +71,18 @@ ul{
   .page {
     flex-direction: column;
     width: 100%;
+    padding: 10px;
   }
-  .sec-gauche, .sec-droite {
+
+.sec-gauche,
+  .sec-droite {
     width: 100%;
+    margin-right: 0;
+  }
+
+  img.photo {
+    width: 100px;
+    height: 100px;
   }
 }
 
